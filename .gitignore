@@ -1,0 +1,4 @@
+.env
+/public/avatars/*
+/public/images/*
+nodemon.json
