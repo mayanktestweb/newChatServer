@@ -1,8 +1,5 @@
 let SmsService = {
     sendOtp(mobile_number, otp) {
-        // for now lets fake it
-        // console.log("Your OTP is "+otp);
-
         return new Promise((resolve, reject) => {
             var req = unirest("POST", "https://www.fast2sms.com/dev/bulk");
 
@@ -27,8 +24,6 @@ let SmsService = {
                 return resolve("success");
             });
         })
-    }
-
     }
 }
 
